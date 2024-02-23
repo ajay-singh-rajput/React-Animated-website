@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: #111011;
+}
+
+.maskImageDiv{
+    mask-image: url('../public/mask.svg');
+    background: #ec4e39;
+    mask-repeat: no-repeat;
+    color: black;
+    mask-size: 40px;
+}
+
+.container {
+    margin-top: 10vh;
+    min-height: 100vh;
+}
+
+.container .body {
+    margin-left: 10vw;
+}
+
+.container .body h1 {
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 5vw;
+    line-height: 5vw;
+    text-transform: uppercase;
+}
+
+.container .body p {
+    color: white;
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+.container .body p span {
+    position: relative;
+}
+
+.container .images {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    margin-top: 5vh;
+}
+
+.container .images .imageContainer {
+    position: absolute;
+}
+
+.container .images .imageContainer img {
+    object-fit: cover;
+}
+
+.container .images .imageContainer:nth-of-type(1) {
+    height: 60vh;
+    width: 50vh;
+    z-index: 1;
+}
+
+.container .images .imageContainer:nth-of-type(2) {
+    left: 55vw;
+    top: 15vh;
+    height: 40vh;
+    width: 30vh;
+    z-index: 2;
+}
+
+.container .images .imageContainer:nth-of-type(3) {
+    left: 27.5vw;
+    top: 40vh;
+    height: 25vh;
+    width: 20vh;
+    z-index: 3;
+}
+
+
+.imageFilter{
+    filter: grayscale(1);
+}
